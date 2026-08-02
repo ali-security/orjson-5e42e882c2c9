@@ -5,7 +5,7 @@ jobs:
   lint:
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/setup-python@v5
+    - uses: MatteoH2O1999/setup-python@v4
       with:
         python-version: '3.12'
     - run: curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable --profile=default -y

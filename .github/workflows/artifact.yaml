@@ -335,7 +335,7 @@ jobs:
 
     - uses: actions/checkout@v4
 
-    - uses: actions/setup-python@v5
+    - uses: MatteoH2O1999/setup-python@v4
       with:
         python-version: ${{ matrix.python.version }}
         allow-prereleases: true
@@ -407,7 +407,7 @@ jobs:
 
     - uses: actions/checkout@v4
 
-    - uses: actions/setup-python@v5
+    - uses: MatteoH2O1999/setup-python@v4
       with:
         python-version: ${{ matrix.python.version }}
 
@@ -481,7 +481,7 @@ jobs:
 
     - uses: actions/checkout@v4
 
-    - uses: actions/setup-python@v5
+    - uses: MatteoH2O1999/setup-python@v4
       with:
         python-version: ${{ matrix.python.version }}
         architecture: ${{ matrix.platform.arch }}
@@ -555,7 +555,7 @@ jobs:
       with:
         pattern: orjson_*
         merge-multiple: true
-    - uses: actions/setup-python@v5
+    - uses: MatteoH2O1999/setup-python@v4
       with:
         python-version: '3.12'
     - run: pip install pip "maturin==1.7.0"
